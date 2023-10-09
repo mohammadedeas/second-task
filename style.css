@@ -8,21 +8,38 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    background-color: #ffffff;
+}
+.bod {
     background-color: #F2F6F9;
+}
+.wavyhead{
+    min-height: 70vh;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    margin-top: -64px;
+}
+.svgtp {
+    position:relative;
+   bottom: 0;
+    left: 0;
+
+
 }
 
 .carton_image {
-    width: 540px;
+    width: 440px;
     height: 100%;
+   
 }
 
 header {
     display: flex;
     justify-content: center;
-    margin-top: 64px;
     margin-bottom: 64px;
     align-items: center;
-    gap: 128px;
+    gap: 128px; 
 }
 
 .head {
@@ -43,11 +60,40 @@ header {
     color: black;
     margin-top: 32px;
 }
+.greeting{
+    font-family: sans-serif;
+    font-size:40px;
+    max-width: 600px;
+    position:relative;
+    
+}
+.greeting::after{
+    content:"";
+    display: block;
+    width:  100%;
+    height: 100%;
+    background-image:url(/images/line.svg);
+    background-size:100px 20px;
+    position: absolute;
+    background-position: bottom right;
+    bottom: -10px;
+    right: 0;
+    z-index: 10;
+    background-repeat: no-repeat;
+    
 
+}
+.greeting-center::after{
+background-position: bottom center;
+
+
+
+}
 .mainnav {
     position: sticky;
     top: 0px;
     width: 100%;
+    
 }
 a{
     text-decoration: none;
@@ -62,12 +108,21 @@ a{
     font-size: 16px;
     font-weight: bold;
     justify-content: right;
-    margin-right: 15%;
+    margin-right: 5%;
     height: 64px;
     
 
 }
+.social{
+    display: flex;
+    gap: 16px;
+}
+.socialfooter{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
 
+}  
 .my_info {
     display: flex;
     justify-content: center;
@@ -98,6 +153,7 @@ a{
 }
 
 .services h1, .skills h1, .contact h1 {
+    font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
     width: fit-content;
@@ -160,6 +216,7 @@ a{
     display: flex;
     justify-content: center;
     gap: 32px;
+    margin-bottom: 4px;
 }
 
 input,textarea
@@ -169,17 +226,21 @@ input,textarea
     border-radius: 12px;
     border: 2px solid rgba(0,0,0,0.1);
     width: 400px;
-    margin-bottom: 16px;
+    
 }
 form
 {
     background-color: white;
     padding: 32px;
     border-radius: 8px;
+    
+}
+.cont{
+    
+    margin-top: 30px;
 }
 fieldset{
     border: none;
-
     display: flex;
     flex-direction: column;
     align-items: start;
